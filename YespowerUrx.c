@@ -19,18 +19,6 @@
 #include <string.h>
 #include <inttypes.h>
 
-/* If LOWER_DIFFICULTY is defined, we use easier parameters.
-   Note: Changing these parameters means you are no longer computing the standard Yespower-URX hash.
-   Remove or undefine LOWER_DIFFICULTY for “normal” behavior. */
-#ifdef LOWER_DIFFICULTY
-static const yespower_params_t params = {
-    .version = YESPOWER_1_0,
-    .N = 512,         // reduced from 2048
-    .r = 8,           // reduced from 32
-    .pers = (const uint8_t *)"UraniumX",
-    .perslen = 8
-};
-#else
 static const yespower_params_t params = {
     .version = YESPOWER_1_0,
     .N = 512,
