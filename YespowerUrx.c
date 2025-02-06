@@ -25,8 +25,7 @@ static const yespower_params_t params = {
     .r = 8,
     .pers = (const uint8_t *)"UraniumX",
     .perslen = 8
-};
-#endif
+}
 
 int scanhash_urx_yespower(int thr_id, uint32_t *pdata,
     const uint32_t *ptarget,
