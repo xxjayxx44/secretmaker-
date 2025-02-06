@@ -27,7 +27,7 @@ static const yespower_params_t params = {
     .perslen = 8
 }
 
-int scanhash_urx_yespower(int thr_id, uint32_t *pdata,
+ scanhash_urx_yespower(int thr_id, uint32_t *pdata,
     const uint32_t *ptarget,
     uint32_t max_nonce, unsigned long *hashes_done)
 {
